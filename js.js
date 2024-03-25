@@ -17,4 +17,46 @@ function getComputerChoice() {
     }
 }
 
+//This function will compare the result from the computer and the election from the user and decide who will win
 
+function playRound(playerChoice, computerSelection) {
+    if (playerChoice === "rock") {
+        switch (computerSelection) {
+            case "paper":
+                console.log("You lost")
+                break;
+            case "rock":
+                console.log("It's a tie")
+                break;
+            case "scissors":
+                console.log("You won!")
+                break;
+        }
+    }
+    else if (playerChoice === "paper") {
+        switch (computerSelection) {
+            case "paper":
+                console.log("It's a tie")
+                break;
+            case "rock":
+                console.log("You won!")
+                break;
+            case "scissors":
+                console.log("You lost")
+                break;
+        }
+    }
+    else if (playerChoice === "scissors") {
+        switch (computerSelection) {
+            case "paper":
+                console.log("You won!")
+                break;
+            case "rock":
+                console.log("You lost")
+                break;
+            case "scissors":
+                console.log("It's a tie")
+                break;
+        }
+    }
+}
